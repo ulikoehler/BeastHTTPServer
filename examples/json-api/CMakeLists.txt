@@ -1,0 +1,5 @@
+project(json-api)
+cmake_minimum_required(VERSION 3.2)
+include_directories(../../include)
+add_executable(json-api ../../src/BeastHTTPServer.cpp json-api.cpp)
+target_link_libraries(json-api boost_json)
