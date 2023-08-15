@@ -7,7 +7,7 @@ Easy-to-use basic C++ webserver library using [boost::beast](https://github.com/
 
 ## How to use?
 
-hello-world example:
+[hello-world example](examples/hello-world/):
 ```cpp
 #include "BeastHTTPServer.hpp"
 
