@@ -10,7 +10,7 @@ make
 ./hello-world
 ```
 
-Then open `http://localhost:18080/`` in your browser.
+Then open `http://localhost:18080/` in your browser.
 This will show
 
 ```
