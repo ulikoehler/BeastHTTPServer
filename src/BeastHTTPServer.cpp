@@ -348,3 +348,10 @@ void BeastHTTPServer::StartThreads(unsigned int nthreads) {
 void BeastHTTPServer::RunBlocking() {
     this->ctx_.run();
 }
+
+void BeastHTTPServer::Stop() {
+    this->ctx_.stop();
+    for (auto& thread : threads_) {
+        thread.join();
+    }
+}

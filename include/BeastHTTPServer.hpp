@@ -70,8 +70,11 @@ public:
     void StartThreads(
         unsigned int nthreads = std::thread::hardware_concurrency()
     );
-    void Stop();
 
+    /**
+     * @brief Gracefully stop the server
+     */
+    void Stop();
 
     /**
      * @brief Runs the IO context in the current thread.
