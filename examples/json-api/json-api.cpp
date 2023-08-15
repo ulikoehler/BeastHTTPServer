@@ -6,8 +6,8 @@ namespace json = boost::json;
 const HTTPRoute helloWorldRoute = {
     .method = http::verb::get,
     .path = "/api/example",
-    .handler = [](HttpRequest& req) {
-        HttpResponse res;
+    .handler = [](HTTPRequest& req) {
+        HTTPResponse res;
 
 
         json::object obj{

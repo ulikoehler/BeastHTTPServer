@@ -3,8 +3,8 @@
 const HTTPRoute helloWorldRoute = {
     .method = http::verb::get,
     .path = "/",
-    .handler = [](HttpRequest& req) {
-        HttpResponse res;
+    .handler = [](HTTPRequest& req) {
+        HTTPResponse res;
         res.body() = "Hello world!";
         res.prepare_payload();
         return res;

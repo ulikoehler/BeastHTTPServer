@@ -40,13 +40,13 @@ namespace http = beast::http;           // from <boost/beast/http.hpp>
 namespace net = boost::asio;            // from <boost/asio.hpp>
 using tcp = boost::asio::ip::tcp;       // from <boost/asio/ip/tcp.hpp>
 
-typedef http::request<http::string_body> HttpRequest;
-typedef http::response<http::string_body> HttpResponse;
+typedef http::request<http::string_body> HTTPRequest;
+typedef http::response<http::string_body> HTTPResponse;
 
 struct HTTPRoute {
     http::verb method = http::verb::get;
     std::string path;
-    std::function<HttpResponse(HttpRequest& req)> handler;
+    std::function<HTTPResponse(HTTPRequest& req)> handler;
 };
 typedef std::vector<HTTPRoute> HTTPRoutes;
 
