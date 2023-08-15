@@ -1,14 +1,3 @@
-# BeastHTTPServer
-Easy-to-use basic C++ webserver library using [boost::beast](https://github.com/boostorg/beast)
-
-## What?
-
-`BeastHTTPServer` is a library that wraps a boost::beast asynchronous HTTP server into an easy-to-use API.
-
-## How to use?
-
-hello-world example:
-```cpp
 #include "BeastHTTPServer.hpp"
 
 const HTTPRoute helloWorldRoute = {
@@ -40,6 +29,3 @@ int main(int argc, char* argv[])
 
     return EXIT_SUCCESS;
 }
-```
-
-For more examples, see `examples` directory.
