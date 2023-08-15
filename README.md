@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-For more examples, see `examples` directory.
+For more examples, see the `examples` directory.
 
 ### Who
 
